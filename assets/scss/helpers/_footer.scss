@@ -1,0 +1,35 @@
+.footer {
+    background-color: lighten($gray-lighter, 5%);
+}
+
+.footer-top {
+    padding: 60px 0px
+}
+
+.footer-top-inner {
+    position: relative;
+}
+
+.footer-bottom-inner {
+    @extend .clearfix;
+
+    border-top: 1px solid $gray-lighter;
+    font-size: 13px;
+    padding: 50px 0px;
+
+    .menu {
+        @extend .nav-pills;
+    }
+
+    .textwidget {
+        padding: 10px 0px;
+    }
+}
+
+.footer-bottom-left {
+    float: left;
+}
+
+.footer-bottom-right {
+    float: right;
+}

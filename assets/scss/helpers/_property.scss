@@ -1,0 +1,275 @@
+.property-gallery {
+    position: relative;
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+.property-gallery-preview {
+    position: relative;
+
+    &:after {
+        background-color: transparent;
+        background-image: linear-gradient(to top, rgba(black, .8), transparent 150px);
+        bottom: 0px;
+        content: '';
+        display: block;
+        left: 0px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+}
+
+.property-gallery-index {
+    bottom: 15px;
+    left: 0px;
+    list-style: none;
+    position: absolute;
+    right: 0px;
+    text-align: center;
+
+    li {
+        display: inline-block;
+        margin: 0px 5px;
+
+        &.active {
+            a {
+                background-color: #fff;
+            }
+        }
+    }
+
+    a {
+        background-color: transparent;
+        border: 2px solid rgba(white, .8);
+        border-radius: 50%;
+        cursor: pointer;
+        display: block;
+        height: 12px;
+        text-indent: -9999px;
+        width: 12px;
+    }
+}
+
+.property-title {
+    font-weight: 400;
+    margin: 40px 0px;
+}
+
+.property-overview {
+    border: 1px solid $gray-lighter;
+    margin: 0px 0px 30px 0px;
+    padding: 15px 30px;
+
+    dl {
+        margin: 0px;
+    }
+
+    dt {
+        float: left;
+        line-height: 32px;
+        padding: 7px 0px;
+    }
+
+    dd {
+        border-bottom: 1px solid $gray-lighter;
+        line-height: 32px;
+        padding: 7px 0px;
+        text-align: right;
+
+        &:last-child {
+            border: 0px;
+        }
+    }
+}
+
+.property-description {
+    line-height: 30px;
+}
+
+/*******************************************************************
+ * Property Amenities
+ *******************************************************************/
+.property-amenities {
+    @extend .row;
+    border-top: 1px solid $gray-lighter;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-top: 40px;
+
+    ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    li {
+        @extend .col-sm-3;
+        list-style: none;
+        line-height: 34px;
+
+        &:before {
+            font-family: 'Glyphicons Halflings';
+            font-size: 10px;
+            margin-right: 10px;
+        }
+
+        &.yes {
+            &:before {
+                content: '\e013';
+                color: $brand-success;
+            }
+        }
+
+        &.no {
+            &:before {
+                content: '\e014';
+                color: $brand-danger;
+            }
+        }
+    }
+}
+
+/*******************************************************************
+ * Property Floor Plans
+ *******************************************************************/
+.property-floor-plans {
+    border-top: 1px solid #eaeaea;
+    margin-top: 60px;
+    overflow: hidden;
+    padding-top: 40px;
+}
+
+.property-floor-plans a {
+    border: 0px !important;
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.property-floor-plans a:hover {
+    text-decoration: none;
+}
+
+.property-floor-plans a img {
+
+}
+
+.property-floor-plans {
+    border-top: 1px solid $gray-lighter;
+    margin-top: 30px;
+    padding-top: 40px;
+}
+
+/*******************************************************************
+ * Property Valuation
+ *******************************************************************/
+.property-valuation {
+    border-top: 1px solid $gray-lighter;
+    margin-top: 60px;
+    padding-top: 40px;
+}
+
+.property-valuation-item {
+    margin-bottom: 15px;
+}
+
+.property-valuation dt {
+    display: inline-block;
+    font-weight: normal;
+    width: 140px;
+}
+
+.property-valuation dd {
+    display: inline-block;
+    height: 15px;
+    margin: 0px 15px 0px 0px;
+    position: relative;
+    width: 60%;
+}
+
+.property-valuation dd .bar-valuation {
+    background-color: silver;
+    height: 100%;
+}
+
+.property-valuation dd span {
+    background-color: rgba(0, 0, 0, .1);
+    margin-left: 40px;
+}
+
+.property-valuation dd strong {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 30px;
+    margin: 0px 0px 0px 10px;
+}
+
+/*******************************************************************
+ * Property Facilities
+ *******************************************************************/
+.property-public-facilities {
+    border-top: 1px solid $gray-lighter;
+    margin-top: 60px;
+    overflow: hidden;
+    padding-top: 40px;
+}
+
+.property-public-facility-wrapper {
+    float: left;
+    padding-bottom: 20px;
+    width: 50%;
+}
+
+.property-public-facility-wrapper:nth-child(2n+1) {
+    padding-right: 10px;
+}
+
+.property-public-facility-wrapper:nth-child(2n+2) {
+    padding-left: 10px;
+}
+
+.property-public-facility {
+    border: solid 1px $gray-lighter;
+    overflow: hidden;
+}
+
+.property-public-facility-info {
+    background-color: $gray-lighter;
+    float: left;
+    line-height: 3;
+    text-align: center;
+    width: 30%;
+}
+
+.property-public-facility-title {
+    float: right;
+    line-height: 3;
+    padding: 0px 20px 0px 20px;
+    width: 70%;
+}
+
+/*******************************************************************
+ * Map
+ *******************************************************************/
+.property-map-position {
+    border-top: 1px solid $gray-lighter;
+    margin-top: 40px;
+    padding-top: 40px;
+}
+
+/*******************************************************************
+ * Similar Properties
+ *******************************************************************/
+.similar-properties {
+    margin-top: 60px;
+
+    h2 {
+        @extend .page-header;
+        font-weight: 400;
+    }
+}

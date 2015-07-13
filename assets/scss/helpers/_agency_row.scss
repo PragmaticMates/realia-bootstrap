@@ -1,0 +1,59 @@
+.agency-row {
+    background-color: lighten($gray-lighter, 5%);
+    border: 1px solid $gray-lighter;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.agency-row-main {
+    display: table;
+    width: 100%;
+}
+
+.agency-thumbnail {
+    display: table-cell;
+    padding: 30px 0px 30px 30px;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 25%;
+}
+
+.agency-row-body {
+    display: table-cell;
+    padding: 30px;
+    vertical-align: top;
+    width: 40%;
+}
+
+.agency-row-overview {
+    display: table-cell;
+    padding: 30px 30px 30px 0px;
+
+    dt {
+        float: left;
+        line-height: 28px;
+        width: 100px;
+    }
+
+    dd {
+        display: table-cell;
+        line-height: 28px;
+    }
+}
+
+.agency-row-title {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 5px 0px 15px 0px;
+
+    a:hover {
+        text-decoration: none;
+    }
+}
+
+.agency-row-overview-title {
+    font-size: 14px;
+    margin: 0px 0px 20px 0px;
+    white-space: nowrap;
+}

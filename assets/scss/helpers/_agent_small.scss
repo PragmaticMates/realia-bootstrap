@@ -1,0 +1,50 @@
+.agent-small {
+    @extend .clearfix;
+}
+
+.type-small .agents-container {
+    border-bottom: 1px solid $gray-lighter;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+
+    &:last-child {
+        border-bottom: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+.agent-small-image {
+    float: left;
+    margin: 0px 20px 0px 0px;
+    width: 70px;
+
+    img {
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+.agent-small-email, .agent-small-phone {
+    color: $gray-light;
+    font-size: 12px;
+
+    a {
+        color: $gray-light;
+    }
+}
+
+.agent-small-title {
+    display: block;
+    font-size: 14px;
+    margin: 0px 0px 15px 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    a {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

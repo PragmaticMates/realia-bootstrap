@@ -1,0 +1,99 @@
+$icon-font-path: '../libraries/bootstrap/fonts/bootstrap/';
+
+@import '../libraries/bootstrap/stylesheets/bootstrap';
+
+@import 'helpers/widgets';
+@import 'helpers/header';
+@import 'helpers/footer';
+
+@import 'helpers/forms';
+@import 'helpers/post';
+@import 'helpers/map';
+
+@import 'helpers/agent';
+@import 'helpers/agent_box';
+@import 'helpers/agent_row';
+@import 'helpers/agent_small';
+
+@import 'helpers/agency';
+@import 'helpers/agency_row';
+
+@import 'helpers/property';
+@import 'helpers/property_small';
+@import 'helpers/property_row';
+@import 'helpers/property_box';
+@import 'helpers/property_sort';
+@import 'helpers/property_table';
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    min-height: 100%;
+
+    &.admin-bar {
+        margin: 0px;
+        padding-top: 32px;
+
+        @media (max-width: 782px) {
+            padding-top: 46px;
+        }
+    }
+}
+
+.screen-reader-text {
+    display: none;
+}
+
+.page-header {
+    margin: 0px 0px 30px 0px;
+
+    h1, h2, h3 {
+        font-weight: 400;
+        margin-bottom: 17px;
+    }
+}
+
+.page-title {
+    font-weight: 400;
+}
+
+.content {
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.sidebar {
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.page-wrapper {
+    display: table;
+    height: 100%;
+    table-layout: auto;
+    width: 100%;
+}
+
+.header, .main, .footer {
+    display: table-row;
+}
+
+.header, .footer {
+    height: 1px;
+}
+
+.sidebar-top {
+    margin-bottom: -60px;
+    margin-top: 60px;
+}
+
+.alerts {
+    margin-top: 60px;
+}
+
+.transactions-table {
+    @extend .table;
+}

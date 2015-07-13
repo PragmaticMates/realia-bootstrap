@@ -1,0 +1,127 @@
+.property-create {
+    @extend .btn, .btn-success;
+
+    float: right;
+    margin: 0px 0px 20px 0px;
+}
+
+.property-table {
+    @extend .table, .table-striped;
+}
+
+.property-table-actions-inner {
+    button {
+        @extend .btn;
+        display: block;
+        margin: 5px 0px;
+        width: 100%;
+
+        &:not(.disabled) {
+            @extend .btn-primary;
+        }
+
+        &.disabled {
+            @extend .btn-default;
+        }
+    }
+}
+
+.property-table-info {
+    position: relative;
+    overflow: hidden;
+
+    .ribbon {
+        border-radius: 50%;
+        left: 18px;
+        height: 20px;
+        position: absolute;
+        top: 18px;
+        text-align: center;
+        width: 20px;
+
+        &:after {
+            color: #fff;
+            display: inline-block;
+            font-family: 'Glyphicons Halflings';
+            -webkit-font-smoothing: antialiased;
+            font-size: 10px;
+            left: 50%;
+            position: absolute;
+            transform: translateX(-50%) translateY(-50%);
+            top: 50%;
+        }
+
+        &.publish {
+            background-color: $brand-success;
+
+            &:after {
+                content: '\e013';
+            }
+        }
+
+        &.draft {
+            background-color: $brand-warning;
+
+            &:after {
+                content: '\270f';
+            }
+        }
+
+        &.warning {
+            background-color: $brand-danger;
+
+            &:after {
+                content: '\e017';
+            }
+        }
+    }
+}
+
+.property-table-info-image {
+    display: block;
+    float: left;
+    margin: 0px 20px 0px 0px;
+
+    img {
+        height: auto;
+        width: 180px;
+    }
+}
+
+.property-table-info-content {
+    margin: 5px 0px;
+}
+
+.property-table-info-content-title {
+    font-size: 17px;
+}
+
+.property-table-info-content-location {
+    font-size: 12px;
+    margin: 0px 0px 10px 0px;
+
+    a {
+        color: $gray-light;
+    }
+}
+
+.property-table-info-content-price {
+    color: $brand-success;
+    font-weight: 700;
+}
+
+.property-table-actions {
+    width: 200px;
+}
+
+.property-table-action {
+    @extend .btn, .btn-success;
+
+    display: block;
+    margin: 5px 0px;
+    width: 100%;
+}
+
+.property-button-delete {
+    @extend .btn, .btn-danger;
+}

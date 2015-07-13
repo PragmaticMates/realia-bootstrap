@@ -1,0 +1,232 @@
+.map-wrapper {
+    img {
+        height: auto;
+        max-width: inherit;
+    }
+}
+
+/*******************************************************************
+ * Marker
+ *******************************************************************/
+.marker {
+    background-color: #fff;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    height: 56px;
+    position: relative;
+    text-align: center;
+    transition: all .15s ease-out;
+    -webkit-user-select: none;
+    user-select: none;
+    width: 56px;
+}
+
+.marker img {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 50%;
+    display: block;
+    height: 50px;
+    width: 50px;
+}
+
+.marker:hover {
+    transform: scale(1.4);
+    transition: all .15s ease-in ;
+}
+
+.marker:after {
+    border-radius: 50%;
+    bottom: 0px;
+    content: '';
+    display: block;
+    left: 0px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.marker span {
+    background-color: #fff;
+    border: 2px solid red;
+    border-radius: 50%;
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    height: 50px;
+    line-height: 46px;
+    text-align: center;
+    width: 50px;
+}
+
+.marker .multiple:hover {
+    transform: scale(1);
+}
+
+/*******************************************************************
+ * Cluster
+ *******************************************************************/
+.clusterer {
+    background-color: $brand-primary;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    height: 56px;
+    line-height: 52px;
+    position: relative;
+    text-align: center;
+    width: 56px;
+}
+
+/*******************************************************************
+ * Infobox
+ *******************************************************************/
+.infobox {
+    background-color: transparent;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, .2);
+    height: 120px;
+    position: relative;
+    width: 280px;
+}
+
+.infobox .close {
+    color: #333;
+    cursor: pointer;
+    height: 17px;
+    display: block;
+    font-size: 10px;
+    line-height: 17px;
+    opacity: 1;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    text-indent: 0px;
+    top: 10px;
+    transition: background-color .15s linear, color .15s linear;
+    width: 17px;
+}
+
+.infobox-scroll {
+    bottom: 4px;
+    font-size: 16px;
+    position: absolute;
+    right: 8px;
+    text-align: center;
+}
+
+.infobox-image {
+    background-color: rgba(0, 0, 0, .12);
+    border-radius: 2px 0px 0px 2px;
+    display: block;
+    float: left;
+    height: 120px;
+    margin: 0px;
+    overflow: hidden;
+    position: relative;
+    width: 120px;
+
+
+}
+
+.infobox-image img {
+    display: block;
+    max-width: 120px;
+    position: relative;
+    z-index: 2;
+}
+
+.infobox-content {
+    background-color: #fff;
+    height: 120px;
+    float: left;
+    padding: 8px;
+    position: relative;
+    width: 160px;
+    z-index: 2;
+}
+
+.infobox-content.multiple {
+    border-radius: 2px 0px 0px 2px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    width: 280px;
+}
+
+.infobox-content-title {
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 5px;
+
+    a {
+        color: $gray;
+    }
+}
+
+.infobox-content-body {
+    background-color: #fff;
+    font-size: 11px;
+    line-height: 16px;
+    height: 80px;
+    margin: 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.infobox-content-body.multiple {
+    height: 102px;
+    overflow: auto;
+}
+
+.infobox-content-body-location {
+    color: #9E9E9E;
+    display: block;
+    font-size: 9px;
+    font-weight: 500;
+    list-style: none;
+    margin: 0px 0px 2px 0px;
+    overflow: hidden;
+    padding: 0px;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: 144px;
+
+    a {
+        color: $gray;
+    }
+
+    .separator {
+        color: $gray;
+        margin: 0px 3px;
+    }
+}
+
+.infobox-content-body-area, .infobox-content-body-baths, .infobox-content-body-beds {
+    line-height: 19px;
+}
+
+.infobox-content-body-value strong {
+    font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.infobox-content-price {
+    background-color: #fff;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, .12);
+    color: $gray;
+    font-size: 11px;
+    font-weight: 600;
+    left: 7px;
+    line-height: 1;
+    margin: 0px;
+    padding: 6px 7px;
+    position: absolute;
+    top: 7px;
+    z-index: 3;
+}

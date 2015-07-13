@@ -1,0 +1,28 @@
+article.post.type-post {
+    background-color: lighten($gray-lighter, 5%);
+    border: 1px solid $gray-lighter;
+    margin: 0px 0px 30px 0px;
+    padding: 30px;
+
+    .entry-thumbnail {
+        margin: -31px -31px 30px -31px;
+
+        img {
+            height: auto;
+            width: 100%;
+        }
+    }
+
+    .entry-title {
+        font-size: 28px;
+        font-weight: 400;
+        margin: 0px 0px 30px 0px;
+    }
+
+    .entry-content {
+        img {
+            height: auto;
+            max-width: 100%;
+        }
+    }
+}

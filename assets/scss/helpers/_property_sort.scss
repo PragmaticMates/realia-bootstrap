@@ -1,0 +1,34 @@
+.properties-sort {
+    margin: 0px 0px 30px 0px;
+    padding: 0px;
+}
+
+.properties-sort-inner {
+    @extend .clearfix;
+}
+
+.properties-filter-sort-title {
+    float: left;
+
+    h3 {
+        margin: 8px 0px 0px 0px;
+        font-size: 14px;
+    }
+}
+
+.properties-filter-sort-by-wrapper {
+    float: right;
+    margin: 0px 0px 0px 30px;
+
+    select {
+        width: 120px;
+    }
+}
+
+.properties-filter-sort-order-wrapper {
+    float: right;
+
+    select {
+        width: 120px;
+    }
+}

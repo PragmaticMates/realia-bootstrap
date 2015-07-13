@@ -1,0 +1,96 @@
+.property-row {
+    background-color: lighten($gray-lighter, 5%);
+    border: 1px solid $gray-lighter;
+    display: table;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.property-row-image {
+    display: table-cell;
+    position: relative;
+    vertical-align: top;
+    width: 35%;
+
+    img {
+        display: block;
+        height: auto;
+        margin-bottom: -1px;
+        margin-left: -1px;
+        margin-top: -1px;
+        max-width: 100%;
+    }
+}
+
+.property-row-content {
+    display: table-cell;
+    padding: 30px;
+    vertical-align: top;
+}
+
+.property-badge {
+    @extend .badge;
+
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+.property-badge-sticky {
+    @extend .badge-danger;
+    left: auto;
+    right: 15px;
+}
+
+.property-row-title {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0px;
+
+    a {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.property-row-location {
+    border-bottom: 1px solid $gray-lighter;
+    color: $gray-light;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding-bottom: 10px;
+
+    a {
+        color: $gray-light;
+    }
+}
+
+.property-row-meta {
+    margin-top: 20px;
+}
+
+.property-row-meta-item {
+    margin-right: 20px;
+
+    span {
+        color: $gray-light;
+        font-size: 12px;
+        margin: 0px 5px 0px 0px;
+    }
+
+    strong {
+        @extend .label, .label-default;
+    }
+}
+
+.property-row-meta-item-price {
+    span {
+        display: none;
+    }
+
+    strong {
+        @extend .label-success;
+    }
+}

@@ -1,0 +1,101 @@
+.properties-row {
+    @extend .clearfix;
+
+    box-sizing: content-box;
+    margin: 30px -15px;
+
+    .property-container {
+        float: left;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        .item-per-row-2 & {
+            width: 50%;
+        }
+
+        .item-per-row-3 & {
+            width: 33.33%;
+
+            @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+                margin-bottom: 30px;
+                width: 50% !important;
+            }
+        }
+
+        .item-per-row-4 & {
+            width: 25%;
+
+            @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+                margin-bottom: 30px;
+                width: 50% !important;
+            }
+        }
+
+        .item-per-row-5 & {
+            width: 20%;
+        }
+
+        @media (max-width: $screen-xs-max) {
+            margin-bottom: 30px;
+            width: 100% !important;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+.property-box {
+    background-color: lighten($gray-lighter, 5%);
+    border: 1px solid $gray-lighter;
+    margin: 0px;
+    padding: 30px;
+}
+
+.property-box-content {
+    @extend .clearfix;
+}
+
+.property-box-image {
+    margin: -31px -31px 0px -31px;
+    position: relative;
+
+    img {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+}
+
+.property-box-title {
+    h3 {
+        display: block;
+        font-size: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        a {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.property-box-type {
+    color: $gray;
+    font-size: 12px;
+    margin: -5px 0px 15px 0px;
+}
+
+.property-box-price {
+    color: $brand-success;
+    float: left;
+    font-weight: bold;
+}
+
+.property-box-read-more {
+    float: right;
+}
