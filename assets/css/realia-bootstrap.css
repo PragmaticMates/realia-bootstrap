@@ -5060,61 +5060,66 @@ tbody.collapse.in {
     z-index: 2;
     margin-left: -1px; }
 
-.nav, .sidebar .widget ul, .widget .menu, .widget.widget_filter_rent_sale_widget .tabs-navigation {
+.nav, .sidebar .widget ul, .widget.widget_pages ul, .widget .menu, .widget.widget_filter_rent_sale_widget .tabs-navigation {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none; }
   .nav:before,
   .sidebar .widget ul:before,
+  .widget.widget_pages ul:before,
   .widget .menu:before,
   .widget.widget_filter_rent_sale_widget .tabs-navigation:before,
-  .nav:after, .sidebar .widget ul:after, .widget .menu:after, .widget.widget_filter_rent_sale_widget .tabs-navigation:after {
+  .nav:after, .sidebar .widget ul:after, .widget.widget_pages ul:after, .widget .menu:after, .widget.widget_filter_rent_sale_widget .tabs-navigation:after {
     content: " ";
     display: table; }
-  .nav:after, .sidebar .widget ul:after, .widget .menu:after, .widget.widget_filter_rent_sale_widget .tabs-navigation:after {
+  .nav:after, .sidebar .widget ul:after, .widget.widget_pages ul:after, .widget .menu:after, .widget.widget_filter_rent_sale_widget .tabs-navigation:after {
     clear: both; }
-  .nav > li, .sidebar .widget ul > li, .widget .menu > li, .widget.widget_filter_rent_sale_widget .tabs-navigation > li {
+  .nav > li, .sidebar .widget ul > li, .widget.widget_pages ul > li, .widget .menu > li, .widget.widget_filter_rent_sale_widget .tabs-navigation > li {
     position: relative;
     display: block; }
-    .nav > li > a, .sidebar .widget ul > li > a, .widget .menu > li > a, .widget.widget_filter_rent_sale_widget .tabs-navigation > li > a {
+    .nav > li > a, .sidebar .widget ul > li > a, .widget.widget_pages ul > li > a, .widget .menu > li > a, .widget.widget_filter_rent_sale_widget .tabs-navigation > li > a {
       position: relative;
       display: block;
       padding: 10px 15px; }
       .nav > li > a:hover,
       .sidebar .widget ul > li > a:hover,
+      .widget.widget_pages ul > li > a:hover,
       .widget .menu > li > a:hover,
       .widget.widget_filter_rent_sale_widget .tabs-navigation > li > a:hover,
-      .nav > li > a:focus, .sidebar .widget ul > li > a:focus, .widget .menu > li > a:focus, .widget.widget_filter_rent_sale_widget .tabs-navigation > li > a:focus {
+      .nav > li > a:focus, .sidebar .widget ul > li > a:focus, .widget.widget_pages ul > li > a:focus, .widget .menu > li > a:focus, .widget.widget_filter_rent_sale_widget .tabs-navigation > li > a:focus {
         text-decoration: none;
         background-color: #eeeeee; }
-    .nav > li.disabled > a, .sidebar .widget ul > li.disabled > a, .widget .menu > li.disabled > a, .widget.widget_filter_rent_sale_widget .tabs-navigation > li.disabled > a {
+    .nav > li.disabled > a, .sidebar .widget ul > li.disabled > a, .widget.widget_pages ul > li.disabled > a, .widget .menu > li.disabled > a, .widget.widget_filter_rent_sale_widget .tabs-navigation > li.disabled > a {
       color: #777777; }
       .nav > li.disabled > a:hover,
       .sidebar .widget ul > li.disabled > a:hover,
+      .widget.widget_pages ul > li.disabled > a:hover,
       .widget .menu > li.disabled > a:hover,
       .widget.widget_filter_rent_sale_widget .tabs-navigation > li.disabled > a:hover,
-      .nav > li.disabled > a:focus, .sidebar .widget ul > li.disabled > a:focus, .widget .menu > li.disabled > a:focus, .widget.widget_filter_rent_sale_widget .tabs-navigation > li.disabled > a:focus {
+      .nav > li.disabled > a:focus, .sidebar .widget ul > li.disabled > a:focus, .widget.widget_pages ul > li.disabled > a:focus, .widget .menu > li.disabled > a:focus, .widget.widget_filter_rent_sale_widget .tabs-navigation > li.disabled > a:focus {
         color: #777777;
         text-decoration: none;
         background-color: transparent;
         cursor: not-allowed; }
   .nav .open > a,
   .sidebar .widget ul .open > a,
+  .widget.widget_pages ul .open > a,
   .widget .menu .open > a,
   .widget.widget_filter_rent_sale_widget .tabs-navigation .open > a,
   .nav .open > a:hover,
   .sidebar .widget ul .open > a:hover,
+  .widget.widget_pages ul .open > a:hover,
   .widget .menu .open > a:hover,
   .widget.widget_filter_rent_sale_widget .tabs-navigation .open > a:hover,
-  .nav .open > a:focus, .sidebar .widget ul .open > a:focus, .widget .menu .open > a:focus, .widget.widget_filter_rent_sale_widget .tabs-navigation .open > a:focus {
+  .nav .open > a:focus, .sidebar .widget ul .open > a:focus, .widget.widget_pages ul .open > a:focus, .widget .menu .open > a:focus, .widget.widget_filter_rent_sale_widget .tabs-navigation .open > a:focus {
     background-color: #eeeeee;
     border-color: #337ab7; }
-  .nav .nav-divider, .sidebar .widget ul .nav-divider, .widget .menu .nav-divider, .widget.widget_filter_rent_sale_widget .tabs-navigation .nav-divider {
+  .nav .nav-divider, .sidebar .widget ul .nav-divider, .widget.widget_pages ul .nav-divider, .widget .menu .nav-divider, .widget.widget_filter_rent_sale_widget .tabs-navigation .nav-divider {
     height: 1px;
     margin: 9px 0;
     overflow: hidden;
     background-color: #e5e5e5; }
-  .nav > li > a > img, .sidebar .widget ul > li > a > img, .widget .menu > li > a > img, .widget.widget_filter_rent_sale_widget .tabs-navigation > li > a > img {
+  .nav > li > a > img, .sidebar .widget ul > li > a > img, .widget.widget_pages ul > li > a > img, .widget .menu > li > a > img, .widget.widget_filter_rent_sale_widget .tabs-navigation > li > a > img {
     max-width: none; }
 
 .nav-tabs, .widget.widget_filter_rent_sale_widget .tabs-navigation {
@@ -7604,7 +7609,7 @@ button.close {
     .widget.widget_archive ul li a:hover, .widget.widget_categories ul li a:hover {
       background-color: transparent; }
 
-.widget .menu li a {
+.widget.widget_pages ul li a, .widget .menu li a {
   color: #333333; }
 
 .widget.widget_filter_rent_sale_widget .tab-content {
@@ -7683,13 +7688,13 @@ button.close {
   background-color: #fbfbfb; }
 
 .footer-top {
+  border-bottom: 1px solid #eeeeee;
   padding: 60px 0px; }
 
 .footer-top-inner {
   position: relative; }
 
 .footer-bottom-inner {
-  border-top: 1px solid #eeeeee;
   font-size: 13px;
   padding: 50px 0px; }
   .footer-bottom-inner .textwidget {

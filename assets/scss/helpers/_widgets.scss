@@ -58,7 +58,7 @@
         max-width: 100%;
     }
 
-    &.widget_archive, &.widget_categories {
+    &.widget_archive, &.widget_categories,  {
         ul li {
             padding: 10px 0px;
             text-align: right;
@@ -74,7 +74,7 @@
         }
     }
 
-    .menu {
+    &.widget_pages ul, .menu {
         @extend .nav;
 
         li a {

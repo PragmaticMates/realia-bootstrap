@@ -3,6 +3,7 @@
 }
 
 .footer-top {
+    border-bottom: 1px solid $gray-lighter;
     padding: 60px 0px
 }
 
@@ -13,7 +14,6 @@
 .footer-bottom-inner {
     @extend .clearfix;
 
-    border-top: 1px solid $gray-lighter;
     font-size: 13px;
     padding: 50px 0px;
 
