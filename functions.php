@@ -1,6 +1,11 @@
 <?php
 
 /**
+ * Libraries
+ */
+require_once 'libraries/class-tgm-plugin-activation.php';
+
+/**
  * Constants
  */
 define( 'PROPERTY_EXCERPT_LENGTH', 22 );
@@ -147,6 +152,25 @@ function realia_bootstrap_customizations( $wp_customize ) {
 	) ) );
 }
 add_action( 'customize_register', 'realia_bootstrap_customizations' );
+
+/**
+ * Register plugins
+ *
+ * @return void
+ */
+function realia_bootstrap_register_required_plugins() {
+	$plugins = array(
+		array(
+			'name'                  => 'Realia',
+			'slug'                  => 'realia',
+			'is_automatic'          => true,
+			'required'              => true,
+		),
+	);
+
+	tgmpa( $plugins );
+}
+add_action( 'tgmpa_register', 'realia_bootstrap_register_required_plugins' );
 
 /**
  * Class Realia_Bootstrap_Menu_Walker
