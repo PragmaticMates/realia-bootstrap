@@ -47,7 +47,7 @@
 				<?php if ( ! empty( $menu ) ) : ?>
 					<?php echo $menu; ?>
 				<?php endif; ?>
-			</div><!-- /.container-fluid -->
+			</div><!-- /.container -->
 		</nav>
 	</div><!-- /.header -->
 
