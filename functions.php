@@ -22,7 +22,7 @@ function realia_bootstrap_excerpt_length( $length ) {
 
 	if ( $post->post_type == 'property' ) {
 		return PROPERTY_EXCERPT_LENGTH;
-	} elseif ( $post->post_type = 'agency' ) {
+	} elseif ( $post->post_type == 'agency' ) {
 		return AGENCY_EXCERPT_LENGTH;
 	}
 
@@ -114,7 +114,7 @@ add_action( 'get_header', 'realia_bootstrap_disable_admin_bar_top_margin' );
 function realia_bootstrap_excerpt_read_more( $more ) {
 	global $post;
 
-	if ( $post->post_type == 'property' || $post->post_type = 'agency' ) {
+	if ( $post->post_type == 'property' || $post->post_type == 'agency' ) {
 		return null;
 	}
 
