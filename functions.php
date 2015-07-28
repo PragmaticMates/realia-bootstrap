@@ -41,6 +41,9 @@ function realia_bootstrap_enqueue_files() {
 
 	wp_register_style( 'realia-bootstrap', get_template_directory_uri() . '/assets/css/realia-bootstrap.css' );
 	wp_enqueue_style( 'realia-bootstrap' );
+	
+	wp_register_style( 'style', get_stylesheet_directory_uri() . '/style.css' );
+	wp_enqueue_style( 'style' );
 }
 add_action( 'wp_enqueue_scripts', 'realia_bootstrap_enqueue_files' );
 
