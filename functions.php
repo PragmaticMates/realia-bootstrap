@@ -3,7 +3,7 @@
 /**
  * Libraries
  */
-require_once 'libraries/class-tgm-plugin-activation.php';
+require_once 'assets/libraries/class-tgm-plugin-activation.php';
 
 /**
  * Constants
