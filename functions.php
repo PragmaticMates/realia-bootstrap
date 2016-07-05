@@ -192,3 +192,16 @@ class Realia_Bootstrap_Menu_Walker extends Walker_Nav_Menu {
 		$output .= "\n$indent<ul class=\"dropdown-menu sub-menu\">\n";
 	}
 }
+
+function realia_remove_responsive_images( $attr ) {
+	if( isset( $attr['sizes'] ) ) {
+		unset( $attr['sizes'] );
+	}
+
+	if( isset( $attr['srcset'] ) ) {
+		unset( $attr['srcset'] );
+	}
+
+	return $attr;
+}
+add_filter( 'wp_get_attachment_image_attributes', 'realia_remove_responsive_images', 9999 );
